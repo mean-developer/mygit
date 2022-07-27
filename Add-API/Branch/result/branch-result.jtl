@@ -1,0 +1,382 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1658913665091,20,PreProcessor,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665229,72,instant-token,200,OK,[TG]Axon-Master 1-1,text,true,,602,1752,1,1,http://192.168.0.206/axon-node/auth/instant_token,65,0,51
+1658913665361,8,login,200,OK,[TG]Axon-Master 1-1,text,true,,1207,733,1,1,http://192.168.0.206/axon-node/auth/login,8,0,0
+1658913665377,253,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665691,32,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665723,4,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665739,8,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2047,0,1,1,null,0,0,0
+1658913665747,5,add-branch-AC-0,200,"001: AC-0 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1253,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913665764,16,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665780,47,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665849,22,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665871,4,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665875,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2177,0,1,1,null,0,0,0
+1658913665877,5,add-branch-AC-1,200,"004: AC-1:  Expected test to fail and it did, got responseCode 400::: TEST PASSED, Setting Response to OK
+Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Not Accepting Unique Name***",[TG]Axon-Master 1-1,text,true,,392,1244,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,0
+1658913665891,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665894,55,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665989,8,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913665998,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666004,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2215,0,1,1,null,0,0,0
+1658913666006,5,add-branch-AC-2,200,"001: AC-2 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Numeric Values***",[TG]Axon-Master 1-1,text,true,,385,1244,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,1
+1658913666017,8,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666028,37,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666097,10,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666107,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666109,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2187,0,1,1,null,0,0,0
+1658913666111,5,add-branch-AC-3,200,"001: AC-3 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Alphanumeric Value***",[TG]Axon-Master 1-1,text,true,,389,1241,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,1
+1658913666121,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666124,48,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666191,5,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666196,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666198,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2178,0,1,1,null,0,0,0
+1658913666199,6,add-branch-AC-4,200,"001: AC-4 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Should be min 3 characters***",[TG]Axon-Master 1-1,text,true,,382,1234,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,2
+1658913666208,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666211,31,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666256,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666261,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666262,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2228,0,1,1,null,0,0,0
+1658913666264,6,add-branch-AC-5,200,"004: AC-5:  Expected test to fail and it did, got responseCode 400::: TEST PASSED, Setting Response to OK
+Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting More Than 20  Charecters***",[TG]Axon-Master 1-1,text,true,,412,1259,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,1
+1658913666274,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666277,28,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666318,7,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666326,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666329,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2213,0,1,1,null,0,0,0
+1658913666330,6,add-branch-AC-6,200,"001: AC-6 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Special Characters***",[TG]Axon-Master 1-1,text,true,,386,1238,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,2
+1658913666341,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666344,28,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666383,7,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666391,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666394,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2169,0,1,1,null,0,0,0
+1658913666395,5,add-branch-AC-7,200,"001: AC-7 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Empty Value***",[TG]Axon-Master 1-1,text,true,,380,1230,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,2
+1658913666404,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666406,42,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666461,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666465,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666467,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2125,0,1,1,null,0,0,0
+1658913666468,8,add-branch-AC-8,200,"001: AC-8 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,381,1244,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,8,0,4
+1658913666479,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666482,29,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666527,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666531,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666533,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2177,0,1,1,null,0,0,0
+1658913666534,4,add-branch-AC-9,200,"005a: AC-9:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Alphabets***",[TG]Axon-Master 1-1,text,false,,380,1248,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913666542,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666545,33,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666592,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666596,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666597,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2176,0,1,1,null,0,0,0
+1658913666598,6,add-branch-AC-10,200,"005a: AC-10:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Numeric Values***",[TG]Axon-Master 1-1,text,false,,380,1240,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,0
+1658913666607,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666610,55,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666678,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666682,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666683,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2123,0,1,1,null,0,0,0
+1658913666684,5,add-branch-AC-11,200,"001: AC-11 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1248,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913666692,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666694,30,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666735,6,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666741,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666743,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2184,0,1,1,null,0,0,0
+1658913666743,4,add-branch-AC-12,200,"001: AC-12 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Should be min 3 characters***",[TG]Axon-Master 1-1,text,true,,381,1246,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913666750,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666752,31,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666795,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666798,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666800,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2207,0,1,1,null,0,0,0
+1658913666801,6,add-branch-AC-13,200,"005a: AC-13:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting More Than 8  Charecters***",[TG]Axon-Master 1-1,text,false,,381,1254,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,1
+1658913666810,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666813,34,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666858,5,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666863,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666865,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2186,0,1,1,null,0,0,0
+1658913666866,4,add-branch-AC-14,200,"001: AC-14 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Special Characters***",[TG]Axon-Master 1-1,text,true,,386,1246,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913666876,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666879,28,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666918,10,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666929,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666932,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2179,0,1,1,null,0,0,0
+1658913666933,4,add-branch-AC-15,200,"001: AC-15 : Expected responseCode 400, got 400::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Empty Value***",[TG]Axon-Master 1-1,text,true,,380,1238,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,1
+1658913666943,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666946,33,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666992,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666996,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913666998,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2182,0,1,1,null,0,0,0
+1658913666999,4,add-branch-AC-16,200,"005a: AC-16:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Space***",[TG]Axon-Master 1-1,text,false,,381,1247,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,1
+1658913667008,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667011,30,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667051,14,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667065,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667068,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2121,0,1,1,null,0,0,0
+1658913667073,5,add-branch-AC-17,200,"001: AC-17 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1246,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,0
+1658913667081,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667083,85,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667281,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667285,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667287,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2114,0,1,1,null,0,0,0
+1658913667291,10,add-branch-AC-18,200,"001: AC-18 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1239,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,9,0,0
+1658913667304,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667307,58,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667382,5,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667387,6,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667393,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2124,0,1,1,null,0,0,0
+1658913667394,6,add-branch-AC-19,200,"001: AC-19 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1249,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,0
+1658913667404,6,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667410,40,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667482,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667487,6,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667494,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2175,0,1,1,null,0,0,0
+1658913667494,4,add-branch-AC-20,200,"005a: AC-20:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactNumber.*** contactNumber Accepting Alphabets***",[TG]Axon-Master 1-1,text,false,,380,1239,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913667502,4,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667506,41,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667562,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667566,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667568,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2186,0,1,1,null,0,0,0
+1658913667569,6,add-branch-AC-21,200,"005a: AC-21:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactNumber *** contactNumber Accepting Alphanumeric Value***",[TG]Axon-Master 1-1,text,false,,380,1241,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,0
+1658913667578,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667581,27,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667618,10,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667628,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667629,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2186,0,1,1,null,0,0,0
+1658913667630,4,add-branch-AC-22,200,"005a: AC-22:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Should be min 3 characters***-",[TG]Axon-Master 1-1,text,false,,380,1241,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913667636,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667638,24,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667669,6,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667675,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667677,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2192,0,1,1,null,0,0,0
+1658913667678,4,add-branch-AC-23,200,"005a: AC-23:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Accepting More Than 20  Charecters***",[TG]Axon-Master 1-1,text,false,,380,1240,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913667684,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667686,22,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667733,2,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667735,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667736,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2184,0,1,1,null,0,0,0
+1658913667737,4,add-branch-AC-24,200,"005a: AC-24:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactNumber *** contactNumber Accepting Special Characters***",[TG]Axon-Master 1-1,text,false,,380,1239,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913667744,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667746,19,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667770,5,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667775,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667776,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2113,0,1,1,null,0,0,0
+1658913667777,3,add-branch-AC-25,200,"001: AC-25 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1238,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913667783,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667784,21,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667814,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667817,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667819,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2185,0,1,1,null,0,0,0
+1658913667820,3,add-branch-AC-26,200,"005a: AC-26:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Accepting Space***",[TG]Axon-Master 1-1,text,false,,380,1252,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913667830,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667832,24,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667868,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667871,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667872,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2124,0,1,1,null,0,0,0
+1658913667873,6,add-branch-AC-27,200,"001: AC-27 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1249,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,0
+1658913667882,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667884,19,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667911,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667915,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667917,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2024,0,1,1,null,0,0,0
+1658913667917,4,add-branch-AC-28,200,"001: AC-28 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1149,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913667924,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667926,49,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667982,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667985,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913667987,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2028,0,1,1,null,0,0,0
+1658913667988,10,add-branch-AC-29,200,"001: AC-29 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1153,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,10,0,0
+1658913668001,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668003,29,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668039,7,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668046,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668047,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2023,0,1,1,null,0,0,0
+1658913668048,3,add-branch-AC-30,200,"001: AC-30 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1148,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913668054,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668056,48,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668130,74,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668205,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668213,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2079,0,1,1,null,0,0,0
+1658913668215,4,add-branch-AC-31,200,"005a: AC-31:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid address .*** address Should be min 3 characters***",[TG]Axon-Master 1-1,text,false,,380,1147,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913668222,4,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668227,26,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668266,5,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668271,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668272,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2408,0,1,1,null,0,0,0
+1658913668273,9,add-branch-AC-32,200,"005a: AC-32:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid address .*** address Accepting More Than 250  Charecters***",[TG]Axon-Master 1-1,text,false,,380,1467,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,9,0,0
+1658913668286,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668288,34,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668337,9,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668346,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668348,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2028,0,1,1,null,0,0,0
+1658913668349,6,add-branch-AC-33,200,"001: AC-33 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1153,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,0
+1658913668359,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668362,25,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668405,10,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668415,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668416,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2021,0,1,1,null,0,0,0
+1658913668417,4,add-branch-AC-34,200,"001: AC-34 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1146,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913668424,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668427,38,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668482,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668486,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668488,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2034,0,1,1,null,0,0,0
+1658913668489,6,add-branch-AC-35,200,"001: AC-35 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1159,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,0
+1658913668497,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668499,28,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668536,5,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668541,3,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668545,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2121,0,1,1,null,0,0,0
+1658913668546,6,add-branch-AC-36,200,"001: AC-36 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1246,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,6,0,0
+1658913668558,4,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668563,27,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668604,11,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668615,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668616,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2181,0,1,1,null,0,0,0
+1658913668618,3,add-branch-AC-37,200,"005a: AC-37:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactPerson .*** contactPerson Accepting Numeric Value***",[TG]Axon-Master 1-1,text,false,,380,1240,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913668626,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668629,28,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668667,5,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668672,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668675,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2199,0,1,1,null,0,0,0
+1658913668678,11,add-branch-AC-38,200,"005a: AC-38:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid contactPerson .*** contactPerson Accepting Alphanumeric Value***",[TG]Axon-Master 1-1,text,false,,380,1253,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,11,0,0
+1658913668694,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668697,33,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668742,9,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668752,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668753,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2192,0,1,1,null,0,0,0
+1658913668754,5,add-branch-AC-39,200,"005a: AC-39:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Should be min 3 characters***",[TG]Axon-Master 1-1,text,false,,380,1246,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,0
+1658913668764,4,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668768,29,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668824,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668828,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668829,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2224,0,1,1,null,0,0,0
+1658913668838,4,add-branch-AC-40,200,"005a: AC-40:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Accepting More Than 20  Charecters***",[TG]Axon-Master 1-1,text,false,,380,1270,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913668846,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668850,31,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668886,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668889,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668890,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2194,0,1,1,null,0,0,0
+1658913668891,5,add-branch-AC-41,200,"005a: AC-41:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Accepting Special Characters***",[TG]Axon-Master 1-1,text,false,,380,1246,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913668899,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668901,24,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668937,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668941,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668942,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2109,0,1,1,null,0,0,0
+1658913668944,5,add-branch-AC-42,200,"001: AC-42 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1234,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,0
+1658913668952,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668954,28,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913668991,14,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669005,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669007,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2129,0,1,1,null,0,0,0
+1658913669009,12,add-branch-AC-43,200,"001: AC-43 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1254,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,12,0,0
+1658913669025,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669027,25,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669058,8,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669067,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669068,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2168,0,1,1,null,0,0,0
+1658913669069,4,add-branch-AC-44,200,"005a: AC-44:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Alphabets***",[TG]Axon-Master 1-1,text,false,,380,1243,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913669076,4,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669080,26,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669115,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669119,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669120,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2183,0,1,1,null,0,0,0
+1658913669121,3,add-branch-AC-45,200,"005a: AC-45:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Alphanumeric Value***",[TG]Axon-Master 1-1,text,false,,380,1249,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913669129,4,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669133,40,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669189,27,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669217,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669225,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2119,0,1,1,null,0,0,0
+1658913669226,12,add-branch-AC-46,200,"001: AC-46 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1244,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,12,0,0
+1658913669241,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669242,23,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669274,10,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669284,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669286,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2128,0,1,1,null,0,0,0
+1658913669287,4,add-branch-AC-47,200,"001: AC-47 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1253,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913669295,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669297,37,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669341,8,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669349,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669352,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2117,0,1,1,null,0,0,0
+1658913669353,4,add-branch-AC-48,200,"001: AC-48 : Expected responseCode 200, got 200::: TEST PASSED, Setting Response to OK:
+Error_Comment :-  Record added successfully",[TG]Axon-Master 1-1,text,true,,380,1242,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913669359,1,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669360,38,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669405,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669409,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669410,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2170,0,1,1,null,0,0,0
+1658913669411,10,add-branch-AC-49,200,"005a: AC-49:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Should be min 3 characters***",[TG]Axon-Master 1-1,text,false,,380,1238,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,10,0,0
+1658913669423,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669425,46,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669483,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669487,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669489,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2189,0,1,1,null,0,0,0
+1658913669490,5,add-branch-AC-50,200,"005a: AC-50:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting More Than 20  Charecters***",[TG]Axon-Master 1-1,text,false,,380,1249,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,5,0,0
+1658913669502,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669504,35,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669550,6,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669556,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669558,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2177,0,1,1,null,0,0,0
+1658913669558,4,add-branch-AC-51,200,"005a: AC-51:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Special Characters***",[TG]Axon-Master 1-1,text,false,,380,1243,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913669566,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669570,21,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669601,4,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669605,1,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669606,1,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2165,0,1,1,null,0,0,0
+1658913669607,3,add-branch-AC-52,200,"005a: AC-52:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Space***",[TG]Axon-Master 1-1,text,false,,380,1244,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,3,0,0
+1658913669614,2,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669616,26,Generate Variable Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669656,3,Configure Null Data,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669659,2,Configure Response Assertion,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0
+1658913669661,0,Debug Sampler,200,OK,[TG]Axon-Master 1-1,text,true,,2161,0,1,1,null,0,0,0
+1658913669666,4,add-branch-AC-53,200,"005a: AC-53:  TEST FAILED:::Expected Message = null Actual Message = Record added successfully
+Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Space*",[TG]Axon-Master 1-1,text,false,,380,1242,1,1,http://192.168.0.206/axon-node/admin/masters/branches/,4,0,0
+1658913669672,3,Write Data File,200,OK,[TG]Axon-Master 1-1,text,true,,0,0,1,1,null,0,0,0

@@ -1,0 +1,25 @@
+Failed Test Cases Are :-
+AC-9,  Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Alphabets***
+AC-10,  Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Numeric Values***
+AC-13,  Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting More Than 8  Charecters***
+AC-16,  Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Space***
+AC-20,  Error_Comment :-  The Request Fail Due To Invalid contactNumber.*** contactNumber Accepting Alphabets***
+AC-21,  Error_Comment :-  The Request Fail Due To Invalid contactNumber *** contactNumber Accepting Alphanumeric Value***
+AC-22,  Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Should be min 3 characters***-
+AC-23,  Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Accepting More Than 20  Charecters***
+AC-24,  Error_Comment :-  The Request Fail Due To Invalid contactNumber *** contactNumber Accepting Special Characters***
+AC-26,  Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Accepting Space***
+AC-31,  Error_Comment :-  The Request Fail Due To Invalid address .*** address Should be min 3 characters***
+AC-32,  Error_Comment :-  The Request Fail Due To Invalid address .*** address Accepting More Than 250  Charecters***
+AC-37,  Error_Comment :-  The Request Fail Due To Invalid contactPerson .*** contactPerson Accepting Numeric Value***
+AC-38,  Error_Comment :-  The Request Fail Due To Invalid contactPerson .*** contactPerson Accepting Alphanumeric Value***
+AC-39,  Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Should be min 3 characters***
+AC-40,  Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Accepting More Than 20  Charecters***
+AC-41,  Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Accepting Special Characters***
+AC-44,  Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Alphabets***
+AC-45,  Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Alphanumeric Value***
+AC-49,  Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Should be min 3 characters***
+AC-50,  Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting More Than 20  Charecters***
+AC-51,  Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Special Characters***
+AC-52,  Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Space***
+AC-53,  Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Space*

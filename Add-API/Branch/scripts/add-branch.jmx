@@ -1,0 +1,619 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.5">
+  <hashTree>
+    <TestPlan guiclass="TestPlanGui" testclass="TestPlan" testname="Add-Branches" enabled="true">
+      <stringProp name="TestPlan.comments">Keywords Used By The Framework:::: NULL, AUTOGEN, SKIP</stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+      <elementProp name="TestPlan.user_defined_variables" elementType="Arguments" guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="***********************TEST TO RUN******************************" elementType="Argument">
+            <stringProp name="Argument.name">***********************TEST TO RUN******************************</stringProp>
+            <stringProp name="Argument.value">***********************TEST TO RUN******************************</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="mandatoryTestType" elementType="Argument">
+            <stringProp name="Argument.name">mandatoryTestType</stringProp>
+            <stringProp name="Argument.value">READINESS</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="optionalTestType1" elementType="Argument">
+            <stringProp name="Argument.name">optionalTestType1</stringProp>
+            <stringProp name="Argument.value">REGRESSION</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="optionalTestType2" elementType="Argument">
+            <stringProp name="Argument.name">optionalTestType2</stringProp>
+            <stringProp name="Argument.value">CHANGE_FOCUSED</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="*******************OTHER PARAMETERS***************************" elementType="Argument">
+            <stringProp name="Argument.name">*******************OTHER PARAMETERS***************************</stringProp>
+            <stringProp name="Argument.value"></stringProp>
+            <stringProp name="Argument.desc">*******************OTHER PARAMETERS***************************</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="keywordToSupress" elementType="Argument">
+            <stringProp name="Argument.name">keywordToSupress</stringProp>
+            <stringProp name="Argument.value">SKIP</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="debug" elementType="Argument">
+            <stringProp name="Argument.name">debug</stringProp>
+            <stringProp name="Argument.value">false</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="****** TEST PROPERTIES - DO NOT MODIFY START ******" elementType="Argument">
+            <stringProp name="Argument.name">****** TEST PROPERTIES - DO NOT MODIFY START ******</stringProp>
+            <stringProp name="Argument.value">****** TEST PROPERTIES - DO NOT MODIFY START ******</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="protocol" elementType="Argument">
+            <stringProp name="Argument.name">protocol</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.protocol)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="serverName" elementType="Argument">
+            <stringProp name="Argument.name">serverName</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.serverName)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="serverPort" elementType="Argument">
+            <stringProp name="Argument.name">serverPort</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.serverPort)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="dataFile" elementType="Argument">
+            <stringProp name="Argument.name">dataFile</stringProp>
+            <stringProp name="Argument.value">${__P(jmeter.dataFile)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="****** TEST PROPERTIES - DO NOT MODIFY END ******" elementType="Argument">
+            <stringProp name="Argument.name">****** TEST PROPERTIES - DO NOT MODIFY END ******</stringProp>
+            <stringProp name="Argument.value">****** TEST PROPERTIES - DO NOT MODIFY END ******</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </elementProp>
+      <stringProp name="TestPlan.user_define_classpath"></stringProp>
+    </TestPlan>
+    <hashTree>
+      <HeaderManager guiclass="HeaderPanel" testclass="HeaderManager" testname="HTTP Header Manager" enabled="true">
+        <collectionProp name="HeaderManager.headers">
+          <elementProp name="Content-Type" elementType="Header">
+            <stringProp name="Header.name">Content-Type</stringProp>
+            <stringProp name="Header.value">application/json</stringProp>
+          </elementProp>
+          <elementProp name="x-access-token" elementType="Header">
+            <stringProp name="Header.name">x-access-token</stringProp>
+            <stringProp name="Header.value">${token}</stringProp>
+          </elementProp>
+          <elementProp name="User-Agent" elementType="Header">
+            <stringProp name="Header.name">User-Agent</stringProp>
+            <stringProp name="Header.value">PostmanRuntime/7.29.0</stringProp>
+          </elementProp>
+          <elementProp name="Authorization" elementType="Header">
+            <stringProp name="Header.name">Authorization</stringProp>
+            <stringProp name="Header.value">Basic QXhvbkFkbWluOnFtejMxQ3lAVkk0eCQlZHVjQTJVTk5Oa1huUUM=</stringProp>
+          </elementProp>
+          <elementProp name="Postman-Token" elementType="Header">
+            <stringProp name="Header.name">Postman-Token</stringProp>
+            <stringProp name="Header.value">dca77f8e-d069-4c81-96eb-367783682cb3</stringProp>
+          </elementProp>
+          <elementProp name="Accept-Encoding" elementType="Header">
+            <stringProp name="Header.name">Accept-Encoding</stringProp>
+            <stringProp name="Header.value">gzip, deflate, br</stringProp>
+          </elementProp>
+        </collectionProp>
+      </HeaderManager>
+      <hashTree/>
+      <CookieManager guiclass="CookiePanel" testclass="CookieManager" testname="HTTP Cookie Manager" enabled="true">
+        <collectionProp name="CookieManager.cookies"/>
+        <boolProp name="CookieManager.clearEachIteration">false</boolProp>
+        <boolProp name="CookieManager.controlledByThreadGroup">false</boolProp>
+      </CookieManager>
+      <hashTree/>
+      <ConfigTestElement guiclass="HttpDefaultsGui" testclass="ConfigTestElement" testname="HTTP Request Defaults" enabled="true">
+        <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+          <collectionProp name="Arguments.arguments"/>
+        </elementProp>
+        <stringProp name="HTTPSampler.domain">${serverName}</stringProp>
+        <stringProp name="HTTPSampler.port"></stringProp>
+        <stringProp name="HTTPSampler.protocol">${protocol}</stringProp>
+        <stringProp name="HTTPSampler.contentEncoding">UTF-8</stringProp>
+        <stringProp name="HTTPSampler.path">/axon-node/admin/masters/branches/</stringProp>
+        <stringProp name="HTTPSampler.concurrentPool">6</stringProp>
+        <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+        <stringProp name="HTTPSampler.response_timeout"></stringProp>
+      </ConfigTestElement>
+      <hashTree/>
+      <TestFragmentController guiclass="TestFragmentControllerGui" testclass="TestFragmentController" testname="[TF] Add-Branches-FT" enabled="true"/>
+      <hashTree>
+        <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Execute" enabled="true">
+          <stringProp name="IfController.condition">&quot;${execute}&quot; == (&quot;YES&quot;)</stringProp>
+          <boolProp name="IfController.evaluateAll">false</boolProp>
+        </IfController>
+        <hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="[IF] Debug" enabled="true">
+            <stringProp name="IfController.condition">&quot;${debug}&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug [CR] - 0" enabled="true">
+              <stringProp name="TestPlan.comments">Use this to debug variable values before the evaluation</stringProp>
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
+          </hashTree>
+          <IfController guiclass="IfControllerPanel" testclass="IfController" testname="Test Type Filter" enabled="true">
+            <stringProp name="IfController.condition">&quot;${mandatoryTestType}&quot; == &quot;${testType}&quot; || &quot;${optionalTestType1}&quot; == &quot;${testType}&quot; ||  &quot;${optionalTestType2}&quot; == &quot;${testType}&quot;</stringProp>
+            <boolProp name="IfController.evaluateAll">false</boolProp>
+          </IfController>
+          <hashTree>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Configure Null Data" enabled="true">
+              <stringProp name="BeanShellSampler.query">// DO NOT Modify This 
+// This Smapler will set any null value in the data file to a blank space
+// ********************************************************************************************
+// Global list of JMeter variables to ignore.
+// *********** Removing one of these values may cause this sampler to fail *********************
+// *********************************************************************************************
+Map ignoreTheseKeys = new HashMap();
+
+ignoreTheseKeys.put(&quot;START.HMS&quot;, &quot;START.HMS&quot;);
+ignoreTheseKeys.put(&quot;START.YMD&quot;, &quot;START.YMD&quot;);
+ignoreTheseKeys.put(&quot;TESTSTART.MS&quot;, &quot;TESTSTART.MS&quot;);
+ignoreTheseKeys.put(&quot;JMeterThread.last_sample_ok&quot;, &quot;JMeterThread.last_sample_ok&quot;);
+ignoreTheseKeys.put(&quot;START.MS&quot;, &quot;START.MS&quot;);
+ignoreTheseKeys.put(&quot;JMeterThread.pack&quot;, &quot;JMeterThread.pack&quot;);
+
+
+for ( entry : vars.entrySet() ) {
+
+	String key = entry.getKey();	
+
+	if (!ignoreTheseKeys.containsKey(key)) {
+		String value = vars.get(key);
+		if (value.equalsIgnoreCase(&quot;NULL&quot;)) {
+	     	value=&quot;&quot;;
+     	     vars.put(key, value);
+		}
+	}
+}
+</stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Configure Response Assertion" enabled="true">
+              <stringProp name="BeanShellSampler.query">// This sampler does the following;
+// 1. It configures the expected result assertion based on the &quot;PASS&quot; or &quot;FAIL&quot; flag in the datafile. 
+// 2. &quot;PASS&quot; flag will set the expected response code to PASS
+// 3. &quot;FAIL&quot; flag will set the expected response code to FAIL
+// 4. However, it will supersede &quot;PASS&quot; or &quot;FAIL&quot; flag with the Expected Response Code, if specified in the data file.
+// *********************************************************************************************************************
+
+String expectedResult=&quot;${expectedResult}&quot;;
+
+// Set expectedResponseCode to Null for every iteration
+String expectedResponseCode=&quot;&quot;;
+expectedResponseCode=&quot;${expectedResponseCode}&quot;;
+
+if ( (expectedResponseCode != &quot;&quot;) || !(expectedResponseCode.equalsIgnoreCase(&quot;${expectedResponseCode}&quot;)) ) {
+
+	// If response code is defined then use that for response assertion
+	vars.put(&quot;assertResponseDefault&quot;, expectedResponseCode);
+} else {
+	// If response code is NOT defined then use respective response codes based on the expectedResult flag. 
+     String assertResponsePASS= &quot;PASS&quot;;
+	String assertResponseFAIL= &quot;FAIL&quot;; 
+	
+	if (expectedResult.equalsIgnoreCase(&quot;PASS&quot;)) {
+	
+		vars.put(&quot;assertResponseDefault&quot;, assertResponsePASS);
+	} else if (expectedResult.equalsIgnoreCase(&quot;FAIL&quot;)) {
+	
+		vars.put(&quot;assertResponseDefault&quot;, assertResponseFAIL);	
+	} else {
+	
+		// This is a mandatory field so default should fail if no value is configured in the test data file
+		vars.put(&quot;assertResponseDefault&quot;, &quot;ERROR: EXPECTED RESULT NOT DEFINED IN DATA FILE&quot;);	
+	}
+}
+
+
+
+</stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+            <DebugSampler guiclass="TestBeanGUI" testclass="DebugSampler" testname="Debug Sampler" enabled="true">
+              <stringProp name="TestPlan.comments">Use this to debug variable values before the execution of request</stringProp>
+              <boolProp name="displayJMeterProperties">false</boolProp>
+              <boolProp name="displayJMeterVariables">true</boolProp>
+              <boolProp name="displaySystemProperties">false</boolProp>
+            </DebugSampler>
+            <hashTree/>
+            <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="add-branch-${testId}" enabled="true">
+              <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+              <elementProp name="HTTPsampler.Arguments" elementType="Arguments">
+                <collectionProp name="Arguments.arguments">
+                  <elementProp name="" elementType="HTTPArgument">
+                    <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                    <stringProp name="Argument.value">{&#xd;
+  &quot;branch_name&quot;: &quot;${branchName}&quot;,&#xd;
+  &quot;branch_code&quot;: &quot;${branchCode}&quot;,&#xd;
+  &quot;contact_person&quot;: &quot;${contactPerson}&quot;,&#xd;
+  &quot;phone&quot;: &quot;${contactNumber}&quot;,&#xd;
+  &quot;address&quot;: &quot;${address}&quot;,&#xd;
+  &quot;state&quot;: &quot;${state}&quot;,&#xd;
+  &quot;pincode&quot;: &quot;${pincode}&quot;&#xd;
+}</stringProp>
+                    <stringProp name="Argument.metadata">=</stringProp>
+                  </elementProp>
+                </collectionProp>
+              </elementProp>
+              <stringProp name="HTTPSampler.domain"></stringProp>
+              <stringProp name="HTTPSampler.port"></stringProp>
+              <stringProp name="HTTPSampler.protocol"></stringProp>
+              <stringProp name="HTTPSampler.contentEncoding"></stringProp>
+              <stringProp name="HTTPSampler.path"></stringProp>
+              <stringProp name="HTTPSampler.method">POST</stringProp>
+              <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+              <boolProp name="HTTPSampler.auto_redirects">false</boolProp>
+              <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
+              <boolProp name="HTTPSampler.DO_MULTIPART_POST">false</boolProp>
+              <stringProp name="HTTPSampler.embedded_url_re"></stringProp>
+              <stringProp name="HTTPSampler.connect_timeout"></stringProp>
+              <stringProp name="HTTPSampler.response_timeout"></stringProp>
+            </HTTPSamplerProxy>
+            <hashTree>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor Response Message" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">apiResponseMessage</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$..msg</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">NO-RESPONSE-MESSAGE</stringProp>
+                <stringProp name="TestPlan.comments">Getting message from any level parent or child because success message is at parent level while error message is at child level $..msg</stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+              <BeanShellAssertion guiclass="BeanShellAssertionGui" testclass="BeanShellAssertion" testname="Terminate on Readiness Failure" enabled="true">
+                <stringProp name="TestPlan.comments">Configure the SampleResult Message for Test Outcome and Terminate the test on Readiness Failure</stringProp>
+                <stringProp name="BeanShellAssertion.query">// DO NOT modify this
+// Configure the Response Message for the outcome of the test, also alter the SampleResult Response state as required
+// This is to terminate test execution if the readiness test fails
+
+// Response code gets precedence over message if both are defined!!!
+String expectedResponseCode = vars.get(&quot;assertResponseDefault&quot;);
+String responseCode = SampleResult.getResponseCode();
+String expectedMessage = vars.get(&quot;assertResponseMessage&quot;);
+String apiResponseMessage = vars.get(&quot;apiResponseMessage&quot;);
+
+//log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; ExpectedResponseCode=&quot; + expectedResponseCode);
+//log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; ResponseCode=&quot; + responseCode);
+
+
+if ( (&quot;${mandatoryTestType}&quot; == &quot;${testType}&quot;) &amp;&amp; (responseCode.equalsIgnoreCase(expectedResponseCode)) ) {
+	//
+	// If expected response code is specified in the data file then use it to assert result first
+     //log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; SUCCESS&quot;);
+	SampleResult.setResponseOK();
+	SampleResult.setResponseMessage(&quot;001: ${testId} : Expected responseCode &quot; + expectedResponseCode + &quot;, got &quot; + responseCode + &quot;::: TEST PASSED, Setting Response to OK:&quot; +&quot;\n&quot;+ &quot;${comments}&quot;);				
+} else if ( (&quot;${mandatoryTestType}&quot; == &quot;${testType}&quot;) &amp;&amp; (apiResponseMessage.equalsIgnoreCase(expectedMessage)) ) {
+	//
+	// If expected response code is specified in the data file then use it to assert result first
+     //log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; SUCCESS&quot;);
+	SampleResult.setResponseOK();		
+	SampleResult.setResponseMessage(&quot;002: ${testId}: Expected message &quot; + expectedMessage + &quot;, got &quot; + apiResponseMessage + &quot;::: TEST PASSED, Setting Response to OK&quot;+&quot;\n&quot;+ &quot;${comments}&quot;);				
+} else if ( (&quot;${mandatoryTestType}&quot; == &quot;${testType}&quot;) &amp;&amp; (expectedResponseCode == &quot;PASS&quot;) &amp;&amp; (SampleResult.isSuccessful()) ) {
+	//
+	// If expected response code is NOT specified in the data file, then use the PASS/FAIL flag to assert result
+	// Here flag &apos;PASS&apos; and Sample Result &apos;Successful&apos; equates to SUCCESS
+	//log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; SUCCESS&quot;);
+	SampleResult.setResponseMessage(&quot;003: ${testId}:  Expected testcase to PASS and it did ::: TEST PASSED&quot;+&quot;\n&quot;+ &quot;${comments}&quot;);			
+} else if ( (&quot;${mandatoryTestType}&quot; == &quot;${testType}&quot;) &amp;&amp; (expectedResponseCode == &quot;FAIL&quot;) &amp;&amp; (!SampleResult.isSuccessful()) ) {
+	//
+	// If expected response code is NOT specified in the data file, then use the PASS/FAIL flag to assert result
+	// Here flag &apos;FAIL&apos; and Sample Result &apos;NOT Successful&apos; equates to SUCCESS	
+	//log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; SUCCESS&quot;);
+	SampleResult.setResponseOK();		
+	SampleResult.setResponseMessage(&quot;004: ${testId}:  Expected test to fail and it did, got responseCode &quot; + responseCode + &quot;::: TEST PASSED, Setting Response to OK&quot;+&quot;\n&quot;+ &quot;${comments}&quot;);				
+} else {
+	//
+	// For all other scenarios... fail and stop the test with custom message
+	//
+	//log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; FAIL&quot;);
+//	log.info(&quot;&gt;&gt;&gt;&gt;&gt;&gt;&gt; expectedMessage=&quot; + expectedMessage + &quot;&lt;&lt;&lt;&lt;&quot;);	
+	if (expectedMessage != &quot;&quot;) {
+//		log.info(&quot;1&quot;);
+		SampleResult.setResponseMessage(&quot;005a: ${testId}:  TEST FAILED:::Expected Message = &quot; + expectedMessage + &quot; Actual Message = &quot; + apiResponseMessage+&quot;\n&quot;+ &quot;${comments}&quot;);	
+	} else {
+//		log.info(&quot;2&quot;);
+		SampleResult.setResponseMessage(&quot;005b: ${testId}:  TEST FAILED:::Expected ResponseCode/Result = &quot; + expectedResponseCode + &quot; Actual ResponseCode/Result = &quot; + responseCode+&quot;\n&quot;+ &quot;${comments}&quot;);	
+	}
+	// Change the sample result to failure, just in-case it isn&apos;t... and this will also change the colour to &apos;Red&apos;!!!
+	SampleResult.setSuccessful(false);
+	// Commenting out - unable if requred
+	//SampleResult.setStopTestNow(true);		
+}
+</stringProp>
+                <stringProp name="BeanShellAssertion.filename"></stringProp>
+                <stringProp name="BeanShellAssertion.parameters"></stringProp>
+                <boolProp name="BeanShellAssertion.resetInterpreter">false</boolProp>
+              </BeanShellAssertion>
+              <hashTree/>
+              <JSONPostProcessor guiclass="JSONPostProcessorGui" testclass="JSONPostProcessor" testname="JSON Extractor" enabled="true">
+                <stringProp name="JSONPostProcessor.referenceNames">branchId</stringProp>
+                <stringProp name="JSONPostProcessor.jsonPathExprs">$.id</stringProp>
+                <stringProp name="JSONPostProcessor.match_numbers">0</stringProp>
+                <stringProp name="JSONPostProcessor.defaultValues">BRANCH-ID-NOT-FOUND</stringProp>
+              </JSONPostProcessor>
+              <hashTree/>
+            </hashTree>
+            <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Write Data File" enabled="true">
+              <stringProp name="BeanShellSampler.query">// File to store user data
+String dataFileName = vars.get(&quot;resultFileName&quot;);
+File dataFile1 = new File(dataFileName);
+if (!dataFile1.exists()) {
+    f = new FileOutputStream(dataFile1, true);
+    p = new PrintStream(f);
+    p.println(&quot;Failed Test Cases Are :-&quot;);
+    p.close();
+    f.close();
+}
+//Get the data for writing to a file 
+String testId = vars.get(&quot;testId&quot;);
+String comments=vars.get(&quot;comments&quot;);
+String responsedata=prev.getResponseDataAsString();
+boolean flag=${JMeterThread.last_sample_ok};
+if(flag==false)
+{
+  f = new FileOutputStream(dataFile1, true);
+    p = new PrintStream(f);
+    p.println(testId + &quot;,  &quot; + comments);
+    p.close();
+    f.close();
+   } </stringProp>
+              <stringProp name="BeanShellSampler.filename"></stringProp>
+              <stringProp name="BeanShellSampler.parameters"></stringProp>
+              <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+            </BeanShellSampler>
+            <hashTree/>
+          </hashTree>
+        </hashTree>
+      </hashTree>
+      <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="[TG]Axon-Master" enabled="true">
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+        <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </elementProp>
+        <stringProp name="ThreadGroup.num_threads">1</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">1</stringProp>
+        <boolProp name="ThreadGroup.scheduler">false</boolProp>
+        <stringProp name="ThreadGroup.duration"></stringProp>
+        <stringProp name="ThreadGroup.delay"></stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="TestPlan.comments">Loop set to infinite, however, data file is configure to stop the thread on EOF</stringProp>
+      </ThreadGroup>
+      <hashTree>
+        <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="PreProcessor" enabled="true">
+          <stringProp name="BeanShellSampler.query">// Create result file 
+import org.apache.jmeter.services.FileServer;
+
+// Define the report file name
+String fileName = &quot;${__TestPlanName}&quot; + &quot;-error-report.txt&quot;; //.replace(&quot;.jmx&quot;,&quot;&quot;)
+ 
+//get path of current jmeter&apos;s script
+String path = FileServer.getFileServer().getBaseDir();
+ 
+//get the separator
+String separator = File.separator;
+ 
+//log.info(&quot;Path: &quot; + path);
+//log.info(&quot;Path with separator: &quot; + path + separator);
+
+String resultFileName = path + &quot;/../result/&quot; + fileName.replace(&quot;.jmx&quot;,&quot;&quot;);
+
+File file = new File(resultFileName);
+
+// Delete the file if exist first
+if (file.delete()) {
+	log.info(&quot;File deleted successfully&quot;);
+} else {
+	log.info(&quot;Failed to delete the file&quot;);
+}
+
+vars.put(&quot;resultFileName&quot;, resultFileName);
+//log.info(resultFileName);</stringProp>
+          <stringProp name="BeanShellSampler.filename"></stringProp>
+          <stringProp name="BeanShellSampler.parameters"></stringProp>
+          <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+        </BeanShellSampler>
+        <hashTree/>
+        <IncludeController guiclass="IncludeControllerGui" testclass="IncludeController" testname="[IC] Login" enabled="true">
+          <stringProp name="IncludeController.includepath">C:\Apps\Jen-Git\JMe-Git-Jen\Add-API\Login\scripts\instant-token.jmx</stringProp>
+        </IncludeController>
+        <hashTree/>
+        <LoopController guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
+          <boolProp name="LoopController.continue_forever">true</boolProp>
+          <stringProp name="TestPlan.comments">Loop set to infinite, however, data file is configure to stop the thread on EOF</stringProp>
+          <intProp name="LoopController.loops">-1</intProp>
+        </LoopController>
+        <hashTree>
+          <BeanShellSampler guiclass="BeanShellSamplerGui" testclass="BeanShellSampler" testname="Generate Variable Data" enabled="true">
+            <stringProp name="BeanShellSampler.query">// READ: Update this for elements that requires auto generated data
+
+// For Example
+
+String autoGenKeyWord = &quot;AUTOGEN&quot;;
+String branchName=vars.get(&quot;branchName&quot;);
+String branchCode=vars.get(&quot;branchCode&quot;);
+String contactPerson=vars.get(&quot;contactPerson&quot;);
+String contactNumber=vars.get(&quot;contactNumber&quot;);
+String address=vars.get(&quot;address&quot;);
+String state=vars.get(&quot;state&quot;);
+String pincode=vars.get(&quot;pincode&quot;);
+
+//Generate Random Hospital Name
+//
+if ( (branchName != &quot;&quot;) &amp;&amp; (branchName.equalsIgnoreCase(autoGenKeyWord)) ) {
+${__RandomString(8,abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,rname)};
+branchName = &quot;${rname}&quot; + &quot;Branch&quot;;
+vars.put(&quot;branchName&quot;, branchName);
+//log.info(branchName);
+}
+//generating hospital code 
+if((branchCode != &quot;&quot;) &amp;&amp; (branchCode.equalsIgnoreCase(autoGenKeyWord)))
+{
+if(&quot;${branchName}&quot; == &quot;&quot;){
+branchCode=&quot;${__RandomString(6,AbCdEfGhIjKlMnOpQrStUvWxYz1234567890,)}&quot;;
+}else{
+branchCode=&quot;${__javaScript(&quot;${branchName}&quot;.substring(0\,4))}&quot;+&quot;${__RandomString(4,1234567890,)}&quot;;
+}
+vars.put(&quot;branchCode&quot;, branchCode);
+//log.info(hospitalCode);
+}
+//generating contact person name 
+if((contactPerson != &quot;&quot;) &amp;&amp; (contactPerson.equalsIgnoreCase(autoGenKeyWord)))
+{
+String contactPerson=&quot;${__RandomString(8,ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz)}&quot;;
+vars.put(&quot;contactPerson&quot;, contactPerson);
+//log.info(contactPerson);
+}
+//generating contact number
+if((contactNumber != &quot;&quot;) &amp;&amp; (contactNumber.equalsIgnoreCase(autoGenKeyWord)))
+{
+String contactNumber=&quot;${__RandomString(10,7898789678,)}&quot;;
+vars.put(&quot;contactNumber&quot;, contactNumber);
+//log.info(contactNumber);
+}
+//generating address
+if((address != &quot;&quot;) &amp;&amp; (address.equalsIgnoreCase(autoGenKeyWord)))
+{
+String address=&quot;${__RandomString(100,abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&amp;*+_-=)}&quot;;
+vars.put(&quot;address&quot;,address);
+}
+//generating state
+if((state != &quot;&quot;) &amp;&amp; (state.equalsIgnoreCase(autoGenKeyWord)))
+{
+String[] states={&quot;Andhra Pradesh&quot;,&quot;Tamil Nadu&quot;,&quot;Delhi&quot;,&quot;Telangana&quot;,&quot;Gujarat&quot;,&quot;Goa&quot;,&quot;Assam&quot;};
+var i=Math.floor(Math.random()*(states.length));
+String state=states[i];
+vars.put(&quot;state&quot;,state);
+}
+//generating pincode
+if((pincode != &quot;&quot;) &amp;&amp; (pincode.equalsIgnoreCase(autoGenKeyWord)))
+{
+String pincode=&quot;${__RandomString(6,567894,)}&quot;;
+vars.put(&quot;pincode&quot;,pincode);
+}</stringProp>
+            <stringProp name="BeanShellSampler.filename"></stringProp>
+            <stringProp name="BeanShellSampler.parameters"></stringProp>
+            <boolProp name="BeanShellSampler.resetInterpreter">false</boolProp>
+          </BeanShellSampler>
+          <hashTree/>
+          <CSVDataSet guiclass="TestBeanGUI" testclass="CSVDataSet" testname="DataFile" enabled="true">
+            <stringProp name="delimiter">,</stringProp>
+            <stringProp name="fileEncoding"></stringProp>
+            <stringProp name="filename">${dataFile}</stringProp>
+            <boolProp name="ignoreFirstLine">false</boolProp>
+            <boolProp name="quotedData">false</boolProp>
+            <boolProp name="recycle">false</boolProp>
+            <stringProp name="shareMode">shareMode.all</stringProp>
+            <boolProp name="stopThread">true</boolProp>
+            <stringProp name="variableNames"></stringProp>
+            <stringProp name="TestPlan.comments">IMPORTANT:::Recycle on EOF is false AND Stop thread on EOF is true == this setting will force JMeter Thread to stop at EOF even when parent loops are set to infinte!!!</stringProp>
+          </CSVDataSet>
+          <hashTree/>
+          <ModuleController guiclass="ModuleControllerGui" testclass="ModuleController" testname="Module Controller" enabled="true">
+            <collectionProp name="ModuleController.node_path">
+              <stringProp name="764597751">Test Plan</stringProp>
+              <stringProp name="-1669383748">Add-Branches</stringProp>
+              <stringProp name="-878392241">[TF] Add-Branches-FT</stringProp>
+            </collectionProp>
+          </ModuleController>
+          <hashTree/>
+        </hashTree>
+      </hashTree>
+      <ResultCollector guiclass="ViewResultsFullVisualizer" testclass="ResultCollector" testname="View Results Tree" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+      <ResultCollector guiclass="StatVisualizer" testclass="ResultCollector" testname="Aggregate Report" enabled="true">
+        <boolProp name="ResultCollector.error_logging">false</boolProp>
+        <objProp>
+          <name>saveConfig</name>
+          <value class="SampleSaveConfiguration">
+            <time>true</time>
+            <latency>true</latency>
+            <timestamp>true</timestamp>
+            <success>true</success>
+            <label>true</label>
+            <code>true</code>
+            <message>true</message>
+            <threadName>true</threadName>
+            <dataType>true</dataType>
+            <encoding>false</encoding>
+            <assertions>true</assertions>
+            <subresults>true</subresults>
+            <responseData>false</responseData>
+            <samplerData>false</samplerData>
+            <xml>false</xml>
+            <fieldNames>true</fieldNames>
+            <responseHeaders>false</responseHeaders>
+            <requestHeaders>false</requestHeaders>
+            <responseDataOnError>false</responseDataOnError>
+            <saveAssertionResultsFailureMessage>true</saveAssertionResultsFailureMessage>
+            <assertionsResultsToSave>0</assertionsResultsToSave>
+            <bytes>true</bytes>
+            <sentBytes>true</sentBytes>
+            <url>true</url>
+            <threadCounts>true</threadCounts>
+            <idleTime>true</idleTime>
+            <connectTime>true</connectTime>
+          </value>
+        </objProp>
+        <stringProp name="filename"></stringProp>
+      </ResultCollector>
+      <hashTree/>
+    </hashTree>
+  </hashTree>
+</jmeterTestPlan>

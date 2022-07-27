@@ -1,0 +1,56 @@
+testId,branchName,branchCode,contactPerson,contactNumber,address,state,pincode,expectedResult,expectedResponseCode,expectedMessage,execute,testType,comments
+AC-0,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-1,Hyderabad,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Not Accepting Unique Name***
+AC-2,12345,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Numeric Values***
+AC-3,Alpha1234,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Alphanumeric Value***
+AC-4,va,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Should be min 3 characters***
+AC-5,Hyderabadsoftpautomationetsjk,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,,Invalid Branch Name,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting More Than 20  Charecters***
+AC-6,vars@#,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Special Characters***
+AC-7,,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Name.***Branch Name Accepting Empty Value***
+AC-8,AUTOGEN,Hyd,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-9,AUTOGEN,Alp,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Alphabets***
+AC-10,AUTOGEN,1234,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Numeric Values***
+AC-11,AUTOGEN,Alp1234,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-12,AUTOGEN,H,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Should be min 3 characters***
+AC-13,AUTOGEN,Hmt123456,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting More Than 8  Charecters***
+AC-14,AUTOGEN,Hmt@#$,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Special Characters***
+AC-15,AUTOGEN,,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Empty Value***
+AC-16,AUTOGEN,Hmt 12,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Branch Code.***Branch Code Accepting Space***
+AC-17,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,Gujarat,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-18,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-19,AUTOGEN,AUTOGEN,AUTOGEN,1234567891,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-20,AUTOGEN,AUTOGEN,AUTOGEN,alpha,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactNumber.*** contactNumber Accepting Alphabets***
+AC-21,AUTOGEN,AUTOGEN,AUTOGEN,alpha1234,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactNumber *** contactNumber Accepting Alphanumeric Value***
+AC-22,AUTOGEN,AUTOGEN,AUTOGEN,12,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Should be min 3 characters***-
+AC-23,AUTOGEN,AUTOGEN,AUTOGEN,1.23E+11,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Accepting More Than 20  Charecters***
+AC-24,AUTOGEN,AUTOGEN,AUTOGEN,@#$%^,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactNumber *** contactNumber Accepting Special Characters***
+AC-25,AUTOGEN,AUTOGEN,AUTOGEN,,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-26,AUTOGEN,AUTOGEN,AUTOGEN,1234 5678,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactNumber .*** contactNumber Accepting Space***
+AC-27,AUTOGEN,AUTOGEN,AUTOGEN,1234567891,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-28,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,alpha,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-29,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,alpha1234,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-30,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,123456,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-31,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,A,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid address .*** address Should be min 3 characters***
+AC-32,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,gsdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddhddfffffffffffffgbgdjfgbhkfbghdfkgbndfkghdiuhgfgkdfjhgdfhgkdjfbgkfhdghdfngkjfghdfkgdfkhgdfhgkjffgfkdjghkjhgfhghdfldhgdfiuhgodfgnffhdiughdfogjdflghdfguhdfghdoghdfgdfiuhgofdghdfgfdghdfohgodfghdfiughdfoghdfghdfughdfohg,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid address .*** address Accepting More Than 250  Charecters***
+AC-33,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,@#$%!,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-34,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-35,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,sfdg dfgdfg,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-36,AUTOGEN,AUTOGEN,Bijib,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-37,AUTOGEN,AUTOGEN,1234,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactPerson .*** contactPerson Accepting Numeric Value***
+AC-38,AUTOGEN,AUTOGEN,BIj12345,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid contactPerson .*** contactPerson Accepting Alphanumeric Value***
+AC-39,AUTOGEN,AUTOGEN,B,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Should be min 3 characters***
+AC-40,AUTOGEN,AUTOGEN,Bijib soft Pvt limited is,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Accepting More Than 20  Charecters***
+AC-41,AUTOGEN,AUTOGEN,Bij!@#,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Contact Person. *** Contact Person Accepting Special Characters***
+AC-42,AUTOGEN,AUTOGEN,,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-43,AUTOGEN,AUTOGEN,ijib sofy,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-44,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,Alpha,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Alphabets***
+AC-45,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,Alpha1234,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Alphanumeric Value***
+AC-46,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,123456,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-47,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,123456,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-48,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,,PASS,200,,YES,READINESS,Error_Comment :-  Record added successfully
+AC-49,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,12,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Should be min 3 characters***
+AC-50,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,1234567,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting More Than 20  Charecters***
+AC-51,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,1@#$%,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Special Characters***
+AC-52,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,123 45,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Space***
+AC-53,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,AUTOGEN,123 45,FAIL,400,,YES,READINESS,Error_Comment :-  The Request Fail Due To Invalid Pincode. *** Pincode Accepting Space*
+
